@@ -6,9 +6,13 @@ Moloch password cracker is a simple password cracking tool written in Go. Moloch
 
 Moloch password cracker comes with a default wordlist of 370099 words, and a small hashed password list for testing purposes. Simply enter the name of the wordlist file, followed by the hashes file, including file extension.
 
+Moloch currently checks for all lowercase, and capitalized words (first letter)
+
 ## Usage
 go run main.go words_alpha.txt hashes.txt
 
 ## TODO
 - Add support for multiple hashing algorithms
-- Add support for cracking 1337 5p34k cracking
+- Add support for cracking 1337 5p34k
+- Add concurrency
+- Add multiple word cracking
